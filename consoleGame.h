@@ -1,3 +1,10 @@
+/*
+    其实代码主要是靠WriteConsoleOutputCharacterA这个函数来实现流畅输出的,
+    这个函数每调用一次会在对应地方将输出的内容直接覆盖到控制台上,
+    所以看上去就很丝滑,
+    但帧数再高一点就露馅了（
+*/
+
 #include <conio.h>
 #include <stdlib.h>
 
@@ -116,5 +123,6 @@ void freeConsole()
     free(consoleBuffer);
     consoleBuffer = NULL;
 }
+
 
 #endif
