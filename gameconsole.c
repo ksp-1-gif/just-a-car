@@ -2,7 +2,6 @@
 这个项目主要是做一个简单的汽车控制台小游戏
 顺便研发下我的控制台结构
 此应用只能在Windows上运行
-在其他平台上会输出"This program cannot run on this system."
 
 由于是C代码
 所以代码中会含有大量的指针
@@ -105,4 +104,5 @@ int main()
     }
     freeConsole();
     return 0;
+
 }
